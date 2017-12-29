@@ -1,15 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh_CN">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
   <title>云付通-一种新的消费形式！</title>
 
+  <meta name="keywords" content="云付通,云付通,云返地产,云返汽车,云返服饰">
+  <meta name="description" content="云付通以创新理念推出全国首个支付返还的综合性消费金融平台——云付通大系统，主营业务为商务服务业，其支付返还的创新理念为支付领域带来划时代的改变。目前已拥有上百万会员、上万间商家和近万名合伙人。">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="layoutmode" content="standard">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="renderer" content="webkit">
+  <meta content="telephone=no" name="format-detection">
+  <meta http-equiv="Pragma" content="no-cache">
+
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <!-- js -->
+  <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+  <script>
+  wx.config({
+            debug: false,
+            appId: 'wxfe990699fe267042',
+            timestamp: '1514571875',
+            nonceStr: 'rp11YNK2cZLrrtELFsWsXaCs7y',
+            signature: 'a77cdb5a68163c80d4863cb2463dff2b6824c8b3',
+            jsApiList: [
+              'checkJsApi',
+              'onMenuShareTimeline',
+              'onMenuShareAppMessage',
+              'onMenuShareQQ'
+            ]
+        });
+
+        wx.ready(function () {
+            //分享给朋友
+            wx.onMenuShareAppMessage({
+                title: '云付通-一种新的消费形式！',
+                desc: '看完这些内容，不管你是商家还是消费者，这种新的消费形式都可以让你从中获利！@中国梦',
+                link: window.location.href,
+                imgUrl: 'http://ipaye.hk/images/yunzhifu2_logo.jpg'
+            });
+            //分享到朋友圈
+            wx.onMenuShareTimeline({
+                title: '看完这些内容，不管你是商家还是消费者，这种新的消费形式都可以让你从中获利！@中国梦',
+                link: window.location.href,
+                imgUrl: 'http://ipaye.hk/images/yunzhifu2_logo.jpg'
+            });
+        });
+        wx.error(function (res) {
+            // alert(res.errMsg);
+        });
+  </script>
 </head>
 
 <body>
@@ -28,9 +76,9 @@
           <div class="container" style="margin-top:30px;width:90%;">
             <div class="slider" style="height: 250px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
               <!-- <ul class="slides" style="height: 210px;"> -->
-                <!-- <li class="" style="opacity: 1; transform: translateX(0px) translateY(0px);"> -->
-                  <img class="responsive-img  dude-pic" src="./img/weixin.jpg">
-                <!-- </li> -->
+              <!-- <li class="" style="opacity: 1; transform: translateX(0px) translateY(0px);"> -->
+              <img class="responsive-img  dude-pic" src="./img/weixin.jpg">
+              <!-- </li> -->
               <!-- </ul> -->
               <div style="text-align:center; color: rgb(30, 96, 172); font-size: 1.25rem;">长按二维码加我微信了解更多</div>
             </div>
@@ -633,7 +681,9 @@
             <div class="col l6 s12">
               <h3 class="white-text" style="text-align: center">长按二维码免费注册</h3>
               <!-- <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p> -->
-              <div class="wjpma"></div>
+              <div class="wjpma">
+                <img class="responsive-img  dude-pic" src="./img/wjp.png">
+              </div>
             </div>
           </div>
         </div>
